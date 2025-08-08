@@ -1,5 +1,11 @@
 [build]
-nixPkgs = ["python39", "gcc", "libglvnd", "libglib2", "libjpeg", "zlib"]
-
-[phases.setup]
-nixPkgs = ["python39", "gcc", "libglvnd", "libglib2", "libjpeg", "zlib"]
+# Install these system packages before pip install
+system_pkgs = [
+    "pkg-config",
+    "libglib-2.0",
+    "libjpeg-turbo",
+    "zlib",
+    "libpng",
+    "libv4l",
+    "gcc"
+]
