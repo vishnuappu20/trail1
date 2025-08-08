@@ -1,0 +1,5 @@
+[build]
+nixPkgs = ["python39", "gcc", "libglvnd", "libglib2", "libjpeg", "zlib"]
+
+[phases.setup]
+nixPkgs = ["python39", "gcc", "libglvnd", "libglib2", "libjpeg", "zlib"]
